@@ -6,79 +6,114 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f172a;
+    background: #0f172a;
     color: #e2e8f0;
-    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #020617;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     background: linear-gradient(135deg, #1e293b, #020617);
 }
 
 .hero h1 {
     font-size: 40px;
-    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    text-decoration: none;
+.hero-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
     background: #38bdf8;
     color: black;
-    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 /* SECTIONS */
 section {
-    max-width: 900px;
+    padding: 50px 20px;
+    max-width: 1000px;
     margin: auto;
-    padding: 40px 20px;
 }
 
 h2 {
-    margin-bottom: 15px;
-    border-bottom: 2px solid #38bdf8;
-    display: inline-block;
+    margin-bottom: 20px;
 }
 
 /* SKILLS */
-.skills ul {
-    list-style: none;
-    margin-top: 15px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
 }
 
-.skills li {
+.skills-grid div {
     background: #1e293b;
     padding: 10px;
-    margin: 8px 0;
+    text-align: center;
     border-radius: 5px;
 }
 
 /* PROJECTS */
-.project-card {
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
     background: #1e293b;
     padding: 20px;
-    margin-top: 15px;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-.project-card:hover {
+.card:hover {
     transform: translateY(-5px);
+}
+
+.buttons a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 /* CONTACT */
 .contact a {
-    color: #38bdf8;
+    display: inline-block;
+    margin-top: 10px;
+    background: #38bdf8;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
 }
 
 /* FOOTER */
