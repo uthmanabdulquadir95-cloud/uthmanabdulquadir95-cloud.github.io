@@ -119,6 +119,12 @@ h2 {
 /* FOOTER */
 footer {
     text-align: center;
+    
     padding: 20px;
     background: #020617;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
