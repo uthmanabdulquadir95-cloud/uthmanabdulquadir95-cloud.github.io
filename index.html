@@ -8,81 +8,121 @@
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <h1>Abdulquadir Uthman</h1>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>Uthman</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Hi, I’m Abdulquadir Uthman</h1>
     <p>Data Analyst | Power BI • Python • Predictive Analytics</p>
-    <a href="https://www.linkedin.com/in/uthman-abdulquadir/" target="_blank" class="btn">Connect on LinkedIn</a>
-</header>
+    <div class="hero-buttons">
+        <a href="https://www.linkedin.com/in/uthman-abdulquadir/" target="_blank">LinkedIn</a>
+        <a href="#projects">View Projects</a>
+    </div>
+</section>
 
 <!-- ABOUT -->
-<section class="about">
+<section id="about" class="about">
     <h2>About Me</h2>
     <p>
-        I am a Data Analyst passionate about transforming raw data into meaningful insights and actionable decisions.
-        My work focuses on data cleaning, visualization, and predictive modeling using tools like Power BI and Python.
+        I am a Data Analyst focused on turning data into insights and actionable decisions. 
+        I work with Power BI and Python to clean data, build dashboards, and develop predictive models.
     </p>
 
     <p>
-        I have built end-to-end data projects — from dashboard development to machine learning models — helping to uncover patterns, 
-        explain trends, and forecast future outcomes.
-    </p>
-
-    <p>
-        I am particularly interested in combining data analytics with behavioral insights to better understand real-world problems 
-        and drive smarter decision-making.
+        My work goes beyond visualization, I explore patterns, explain trends, and forecast future outcomes.
+        I am particularly interested in combining analytics with behavioral insights to solve real-world problems.
     </p>
 </section>
 
 <!-- SKILLS -->
 <section class="skills">
-    <h2>Skills & Tools</h2>
-    <ul>
-        <li>Power BI (Dashboard Design & DAX)</li>
-        <li>Python (Pandas, Matplotlib, Scikit-learn)</li>
-        <li>Data Cleaning & Transformation</li>
-        <li>Data Visualization</li>
-        <li>Predictive Analytics & Machine Learning</li>
-    </ul>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div>Power BI</div>
+        <div>Python</div>
+        <div>Pandas</div>
+        <div>Data Cleaning</div>
+        <div>Data Visualization</div>
+        <div>Machine Learning</div>
+    </div>
 </section>
 
 <!-- PROJECTS -->
-<section class="projects">
+<section id="projects" class="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
-        <h3>📊 Personal Finance Dashboard</h3>
-        <p>
-            Designed and developed an interactive Power BI dashboard to analyze spending patterns, identify trends,
-            and provide actionable financial insights.
-        </p>
-    </div>
+    <div class="project-grid">
 
-    <div class="project-card">
-        <h3>🔍 Spending Behavior Analysis</h3>
-        <p>
-            Conducted in-depth analysis of financial data and documented key insights in a structured Medium article,
-            focusing on behavioral spending patterns.
-        </p>
-    </div>
+        <div class="card">
+            <h3>📊 Finance Dashboard</h3>
+            <p>Interactive Power BI dashboard analyzing spending patterns and trends.</p>
+            <div class="buttons">
+                <a href="#">View Dashboard</a>
+            </div>
+        </div>
 
-    <div class="project-card">
-        <h3>🔮 Expense Forecasting Model</h3>
-        <p>
-            Built a predictive model using Python to forecast future expenses. Applied feature engineering,
-            machine learning techniques, and model evaluation to generate realistic predictions.
-        </p>
-    </div>
+        <div class="card">
+            <h3>🔍 Spending Analysis</h3>
+            <p>Explored financial behavior and documented insights in a detailed article.</p>
+            <div class="buttons">
+                <a href="#">Read Article</a>
+            </div>
+        </div>
 
+        <div class="card">
+            <h3>🔮 Expense Forecast</h3>
+            <p>Built a machine learning model in Python to predict future expenses.</p>
+            <div class="buttons">
+                <a href="#">View Code</a>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
-    <h2>Connect With Me</h2>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/uthman-abdulquadir/" target="_blank">uthman-abdulquadir</a></p>
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let’s connect and collaborate.</p>
+    <a href="https://www.linkedin.com/in/uthman-abdulquadir/" target="_blank">Connect on LinkedIn</a>
 </section>
+<a href="https://wa.me/234XXXXXXXXXX" 
+   class="whatsapp-float" 
+   target="_blank">
+   💬
+</a>
 
-<!-- FOOTER -->
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-decoration: none;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+</style>
 <footer>
     <p>© 2026 Abdulquadir Uthman</p>
 </footer>
